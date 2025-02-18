@@ -1,17 +1,29 @@
-.App {
-  text-align: center;
-}
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+*{
+  background-color: rgb(196, 181, 96);
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@media screen and (max-width: 750px) {
+  .App h1 {
+    display: flex;
+     text-align: center;
+     margin-left: 550px;
+    
+  }
+  .inputbox{
+    color: aliceblue;
+    margin-left: 70px;
+    margin-right: 30px;
+  }
+  .butonbox{
+    margin-right: 30px;
+  }
+  .outerDiv ul li{
+    margin-left: 70px;
+    margin-right: 280px;
   }
 }
+
+
 
 .App-header {
   background-color: #282c34;
@@ -23,16 +35,54 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.App h1{
+  text-align: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+form{
+  display: flex;
+  width: 1170px;
+  margin: auto;
+  gap :20px;
+}
+form input{
+  flex-basis: 80%;
+  color: aliceblue;
+  height: 40px;
+  border-color: rgb(27, 141, 112);
+}
+form button{
+  flex-basis: 20%;
+  color: aliceblue;
+  background-color: rgb(54, 38, 38);
+}
+.outerDiv{
+  width: 1170px;
+  margin: auto;
+}
+.outerDiv ul{
+  margin: 0px;
+  padding: 0px;
+  margin-top: 50px; ;
+  list-style: none;
+}
+.outerDiv ul li{
+  color: aliceblue;
+  padding: 0px;
+  margin-top: 30px;
+  font-size: 25px;
+  position: relative;
+  text-align: left;
+  background-color: #282c34;
+}
+.outerDiv ul li span{
+  right: 20px;
+  position: absolute;
+  cursor: pointer;
+}
+.completetodo{
+  text-decoration: line-through;
+  color: red !important;
+  background-color: yellow !important;
 }
