@@ -51,7 +51,7 @@ function ToDoListItems({value,indexNumber,todolist,setTodolist}){
   let [status,setStatus]=useState(false)
 
   let deleteRow=()=>{
-    let finalData=todolist.filter((v,i )=>i!=indexNumber)
+    let finalData=todolist.filter((v,i )=>i!==indexNumber)
     setTodolist(finalData)
   }
 
